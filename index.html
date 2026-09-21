@@ -6,7 +6,7 @@
 
 <title>Teo Jiménez Builders | Houston</title>
 
-<meta name="description" content="Teo Jiménez Builders - remodeling, bathrooms, kitchens, flooring, painting and electrical services in Houston and surrounding areas.">
+<meta name="description" content="Teo Jiménez Builders - remodeling and construction services in Houston and surrounding areas.">
 
 <style>
 :root{
@@ -14,7 +14,7 @@
   --panel:#14181a;
   --green:#37b56b;
   --text:#f4f6f7;
-  --muted:#aeb6ba
+  --muted:#aeb6ba;
 }
 
 *{box-sizing:border-box}
@@ -24,28 +24,28 @@ body{
   font-family:Arial,Helvetica,sans-serif;
   background:var(--bg);
   color:var(--text);
-  line-height:1.5
+  line-height:1.5;
 }
 
 .wrap{
   max-width:1100px;
   margin:auto;
-  padding:0 20px
+  padding:0 20px;
 }
 
 header{
   position:sticky;
   top:0;
-  background:rgba(11,13,14,.94);
+  background:rgba(11,13,14,.95);
   border-bottom:1px solid #242a2d;
-  z-index:5
+  z-index:5;
 }
 
 nav{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:15px 0
+  padding:15px 0;
 }
 
 nav strong{font-size:20px}
@@ -53,7 +53,7 @@ nav strong{font-size:20px}
 nav a{
   color:var(--text);
   text-decoration:none;
-  margin-left:16px
+  margin-left:16px;
 }
 
 .hero{
@@ -61,26 +61,26 @@ nav a{
   display:grid;
   grid-template-columns:1.1fr .9fr;
   gap:34px;
-  align-items:center
+  align-items:center;
 }
 
 .badge{
   color:var(--green);
   font-weight:700;
   text-transform:uppercase;
-  letter-spacing:.08em
+  letter-spacing:.08em;
 }
 
 h1{
   font-size:46px;
   line-height:1.08;
-  margin:10px 0 16px
+  margin:10px 0 16px;
 }
 
 .lead{
   color:var(--muted);
   font-size:19px;
-  max-width:650px
+  max-width:650px;
 }
 
 .btn{
@@ -91,51 +91,51 @@ h1{
   font-weight:700;
   padding:12px 18px;
   border-radius:8px;
-  margin:8px 8px 0 0
+  margin:8px 8px 0 0;
 }
 
 .btn.alt{
   background:#23292c;
   color:var(--text);
-  border:1px solid #394145
+  border:1px solid #394145;
 }
 
 .hero img{
   width:100%;
   border-radius:14px;
   border:1px solid #2f3639;
-  box-shadow:0 16px 40px rgba(0,0,0,.35)
+  box-shadow:0 16px 40px rgba(0,0,0,.35);
 }
 
 section{padding:42px 0}
 
 h2{
   font-size:32px;
-  margin:0 0 18px
+  margin:0 0 18px;
 }
 
 .sub{
   color:var(--muted);
-  margin-top:-8px
+  margin-top:-8px;
 }
 
 .services{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:14px
+  gap:14px;
 }
 
 .card{
   background:var(--panel);
   border:1px solid #252c2f;
   border-radius:12px;
-  padding:18px
+  padding:18px;
 }
 
 .gallery{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:14px
+  gap:14px;
 }
 
 .gallery img{
@@ -144,20 +144,20 @@ h2{
   object-fit:cover;
   border-radius:12px;
   border:1px solid #2c3336;
-  background:#111
+  background:#111;
 }
 
 .contact{
   background:linear-gradient(135deg,#151a1c,#101312);
   border:1px solid #283034;
   border-radius:14px;
-  padding:28px
+  padding:28px;
 }
 
 footer{
   padding:30px 0 45px;
   color:var(--muted);
-  text-align:center
+  text-align:center;
 }
 
 @media(max-width:800px){
@@ -175,17 +175,21 @@ footer{
 <header>
 <div class="wrap">
 <nav>
+
 <strong>TEO JIMÉNEZ BUILDERS</strong>
 
 <div class="links">
 <a href="#services">Services</a>
-<a href="#work">Our Work</a>
+<a href="#bathrooms">Bathrooms</a>
+<a href="#fences">Fences</a>
+<a href="#interior">Interiors</a>
 <a href="#contact">Contact</a>
 </div>
 
 </nav>
 </div>
 </header>
+
 
 <main class="wrap">
 
@@ -208,6 +212,7 @@ Call 936-827-7556
 <a class="btn alt" href="https://wa.me/19368277556">
 WhatsApp
 </a>
+
 </div>
 
 <div>
@@ -222,9 +227,7 @@ alt="Teo Jiménez Builders business card">
 
 <h2>Services</h2>
 
-<p class="sub">
-From plans to reality.
-</p>
+<p class="sub">From plans to reality.</p>
 
 <div class="services">
 
@@ -259,11 +262,10 @@ Practical solutions for residential projects.
 </div>
 
 </div>
-
 </section>
 
 
-<section id="work">
+<section id="bathrooms">
 
 <h2>Bathroom Projects</h2>
 
@@ -271,26 +273,16 @@ Practical solutions for residential projects.
 A selection of recent bathroom work.
 </p>
 
-<div class="gallery">
+<div class="gallery" id="bathroomGallery">
 
 <img src="IMG_7626.png"
-alt="Bathroom remodeling project">
-
-<img src="bathrooms/IMG_7627.png"
-alt="Bathroom remodeling project">
-
-<img src="bathrooms/IMG_8107.png"
-alt="Bathroom remodeling project">
-
-<img src="bathrooms/IMG_8297.png"
-alt="Bathroom remodeling project">
+alt="Bathroom project">
 
 </div>
 
 </section>
 
 
-<section id="contact">
 <section id="fences">
 
 <h2>Fence Projects</h2>
@@ -299,26 +291,26 @@ alt="Bathroom remodeling project">
 A selection of recent fence work.
 </p>
 
-<div class="gallery">
-
-<img src="fences/IMG_8529.jpg"
-alt="Fence project">
-
-<img src="fences/IMG_8568.jpg"
-alt="Fence project">
-
-<img src="fences/IMG_8569.jpg"
-alt="Fence project">
-
-<img src="fences/IMG_8570.jpg"
-alt="Fence project">
-
-<img src="fences/IMG_8572.jpg"
-alt="Fence project">
-
-</div>
+<div class="gallery" id="fenceGallery"></div>
 
 </section>
+
+
+<section id="interior">
+
+<h2>Interior Projects</h2>
+
+<p class="sub">
+A selection of recent interior remodeling work.
+</p>
+
+<div class="gallery" id="interiorGallery"></div>
+
+</section>
+
+
+<section id="contact">
+
 <div class="contact">
 
 <h2>Ready to talk about your project?</h2>
@@ -329,12 +321,15 @@ alt="Fence project">
 Call 936-827-7556
 </a>
 
+<a class="btn alt" href="https://wa.me/19368277556">
+WhatsApp
+</a>
+
 <a class="btn alt" href="mailto:pantera9@live.com">
 Email
 </a>
 
 </div>
-
 </section>
 
 </main>
@@ -345,6 +340,68 @@ Email
 © 2026 Teo Jiménez Builders
 </div>
 </footer>
+
+
+<script>
+
+const owner = "tjbuilderstexas";
+const repo = "tjbuilderstexas.github.io";
+
+async function loadGallery(folder, galleryId, description){
+
+  const gallery = document.getElementById(galleryId);
+
+  try{
+
+    const response = await fetch(
+      `https://api.github.com/repos/${owner}/${repo}/contents/${folder}`
+    );
+
+    const files = await response.json();
+
+    files
+      .filter(file =>
+        /\.(jpg|jpeg|png|webp)$/i.test(file.name)
+      )
+      .sort((a,b) => a.name.localeCompare(b.name))
+      .forEach(file => {
+
+        const img = document.createElement("img");
+
+        img.src = file.download_url;
+        img.alt = description;
+        img.loading = "lazy";
+
+        gallery.appendChild(img);
+
+      });
+
+  }catch(error){
+
+    console.log("Gallery loading error:", error);
+
+  }
+}
+
+loadGallery(
+  "bathrooms",
+  "bathroomGallery",
+  "Bathroom remodeling project"
+);
+
+loadGallery(
+  "fences",
+  "fenceGallery",
+  "Fence project"
+);
+
+loadGallery(
+  "interior",
+  "interiorGallery",
+  "Interior remodeling project"
+);
+
+</script>
 
 </body>
 </html>
